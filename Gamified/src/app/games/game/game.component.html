@@ -1,0 +1,6 @@
+<li class="gamelist">
+  {{ game.title }} - {{ game.developer | uppercase }}
+  at {{ game.price | currency: "EUR"}}
+  <img [src]="game.img" [alt]="game.title" width="200" />
+  <button (click)="addToCart()">Add to cart</button>
+</li>
