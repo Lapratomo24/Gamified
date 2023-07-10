@@ -14,4 +14,8 @@ export class CartService {
     console.log(game);
     this.cart.push(game);
   }
+
+  removeGameFromCart(game: Game) {
+    this.cart = this.cart.filter((g) => g !== game);
+  }
 }

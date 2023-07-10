@@ -1,0 +1,8 @@
+<h1>My Cart</h1>
+<!-- <div>{{ getCart().length }}</div> -->
+<div *ngIf="getCart().length > 0">
+  <div *ngFor="let game of getCart()">
+    <p>{{ game.title }}</p>
+  </div>
+</div>
+<div *ngIf="getCart().length === 0">Your cart is empty</div>
