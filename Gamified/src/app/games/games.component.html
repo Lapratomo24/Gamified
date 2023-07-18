@@ -1,15 +1,20 @@
-<h2>List of Available Games</h2>
-<ul *ngIf="isShowing">
+<h1 class="p-10 text-3xl font-bold">Welcome to Gamified Shop!</h1>
+<h2 class="px-10 text-xl">List of Available Games</h2>
+<br>
+<ul class="mx-6" *ngIf="isShowing">
   <ng-container *ngFor="let game of games; let i = index">
     <!-- <app-game (gameEmitter)="addToCart($event)" [game]="game"></app-game> -->
     <app-game [game]="game"></app-game>
-
   </ng-container>
 </ul>
-<button (click)="clickHandler()" [disabled]="isDisabled">Click Me!</button>
+
+<!-- <button (click)="clickHandler()" [disabled]="isDisabled">Click Me!</button> -->
+
 <!-- <input type="text" name="" id="" [(ngModel)]="name" />
 <p>{{ name }}</p> -->
-<button (click)="toggler()">
+
+<!-- <button (click)="toggler()">
   {{ isShowing ? "Hide" : "Display" }}
-</button>
+</button> -->
+
 <!-- (click)="isShowing = !isShowing" -->

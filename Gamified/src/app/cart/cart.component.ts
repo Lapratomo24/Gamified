@@ -14,6 +14,6 @@ export class CartComponent implements OnInit {
   }
 
   getCart() {
-    return this.cartService.cart;;
+    return this.cartService.cart;
   }
 }

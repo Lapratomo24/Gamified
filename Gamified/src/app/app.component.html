@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="app.component.scss">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Welcome to Gamified Shop!</h1>
-  <app-games></app-games>
-  <app-cart></app-cart>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.component.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="flex justify-between items-center px-16 py-4 bg-indigo-950 border-slate-50 border-b-2">
+      <div>
+        <a class="text-4xl font-semibold" routerLink="">Gamified</a>
+      </div>
+      <div class="bg-red-600 hover:bg-red-500 py-2 px-4 rounded-md">
+        <a class="text-lg font-semibold" routerLink="/cart">My Cart ({{ cartAmount() }})</a>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+    <!-- <app-games></app-games>
+    <app-cart></app-cart> -->
+    <footer class="flex justify-between items-center px-16 py-8 bg-indigo-950 border-slate-50 border-t-2">
+      <p class="font-bold">Gamified &copy; All Rights Reserved</p>
+      <div>
+        <p>Social Media Buttons</p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -2,5 +2,12 @@ h1 {
   color: white;
   font-size: 3rem;
   text-align: center;
-  padding-top: 2em;
+}
+
+body {
+  background-image: url(../assets/gamified.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }

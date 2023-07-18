@@ -6,7 +6,7 @@ import { Game } from '../interfaces/Game';
 })
 export class CartService {
 
-  constructor() { }
+  constructor()  { }
 
   cart: Array<Game> = [];
 
